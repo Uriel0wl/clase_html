@@ -3,18 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Páginas</title>
+    <title>Portafolio de Proyectos - Edgar Uriel Marín Gómez</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #3b82f6;
+            --light-color: #f3f4f6;
+            --dark-color: #1f2937;
+            --success-color: #10b981;
+            --text-color: #374151;
+            --text-light: #6b7280;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .author {
+            color: var(--text-light);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .intro {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .project-header {
+            background: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .project-body {
+            padding: 25px;
+        }
+        
+        .project-title {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .project-description {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .project-link {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .project-link:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Páginas</h1>
-    <p>Edgar Uriel Marín Gómez</p>
-    
-    <h2>Ejercicio 1:</h2>
-    <p><strong>Link:</strong> <a href="https://uriel0wl.github.io/edgarmar-n_awsdata_xideral/Tareas/18Agosto/Netflix.html" target="_blank">Tarea 1</a></p>
-    <p><strong>Descripción:</strong> Primer ejercicio analizando archivo Netflix</p>
-    
-    <h2>Ejercicio 2:</h2>
-    <p><strong>Link:</strong> <a href="https://uriel0wl.github.io/edgarmar-n_awsdata_xideral/Tareas/19Agosto/GráficasNetflix.html" target="_blank">Tarea 2</a></p>
-    <p><strong>Descripción:</strong> Segundo ejercicio añadiendo gráficas a archivo Netflix</p>
+    <div class="container">
+        <header>
+            <h1>Portafolio de Proyectos</h1>
+            <p class="author">Edgar Uriel Marín Gómez</p>
+            <p class="intro">Bienvenido a mi portafolio de proyectos de análisis de datos. A continuación se muestran los ejercicios que he desarrollado como parte de mi formación en AWS Data Engineer con Xideral.</p>
+        </header>
+        
+        <main>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h2>Ejercicio 1</h2>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Análisis de Netflix</h3>
+                        <p class="project-description">Primer ejercicio analizando archivo Netflix. Este proyecto incluye el procesamiento y análisis inicial de datos de catálogo de Netflix.</p>
+                        <a href="https://uriel0wl.github.io/edgarmar-n_awsdata_xideral/Tareas/18Agosto/Netflix.html" target="_blank" class="project-link">Ver Proyecto</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h2>Ejercicio 2</h2>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Visualización de Datos de Netflix</h3>
+                        <p class="project-description">Segundo ejercicio añadiendo gráficas al análisis del archivo Netflix. Incluye visualizaciones para mejor comprensión de los datos.</p>
+                        <a href="https://uriel0wl.github.io/edgarmar-n_awsdata_xideral/Tareas/19Agosto/GráficasNetflix.html" target="_blank" class="project-link">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2023 - Portafolio de Edgar Uriel Marín Gómez</p>
+        </footer>
+    </div>
+
+    <script>
+        // Efecto de aparición suave para las tarjetas de proyectos
+        document.addEventListener('DOMContentLoaded', function() {
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            projectCards.forEach((card, index) => {
+                // Aplicar un retraso escalonado para la animación
+                card.style.animationDelay = `${index * 0.2}s`;
+                card.classList.add('fade-in');
+            });
+        });
+    </script>
 </body>
 </html>
