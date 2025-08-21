@@ -113,7 +113,75 @@
         .project-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
-            border-color: var(--primary-color);
+        }
+        
+        /* Netflix themed project */
+        .netflix-project:hover {
+            border-color: #e50914;
+        }
+        
+        .netflix-header {
+            background: linear-gradient(135deg, #e50914 0%, #b20710 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .netflix-link {
+            background: #e50914;
+        }
+        
+        .netflix-link:hover {
+            background: #f40612;
+            box-shadow: 0 4px 12px rgba(229, 9, 20, 0.4);
+        }
+        
+        /* Netflix charts themed project */
+        .netflix-charts-project:hover {
+            border-color: #e50914;
+        }
+        
+        .netflix-charts-header {
+            background: linear-gradient(135deg, #e50914 0%, #221f1f 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .netflix-charts-link {
+            background: #e50914;
+        }
+        
+        .netflix-charts-link:hover {
+            background: #f40612;
+            box-shadow: 0 4px 12px rgba(229, 9, 20, 0.4);
+        }
+        
+        /* Spotify themed project */
+        .spotify-project:hover {
+            border-color: #1db954;
+        }
+        
+        .spotify-header {
+            background: linear-gradient(135deg, #1db954 0%, #1ed760 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .spotify-link {
+            background: #1db954;
+        }
+        
+        .spotify-link:hover {
+            background: #1ed760;
+            box-shadow: 0 4px 12px rgba(29, 185, 84, 0.4);
         }
         
         .project-header {
@@ -324,8 +392,8 @@
         
         <main>
             <div class="projects-grid">
-                <div class="project-card fade-in">
-                    <div class="project-header">
+                <div class="project-card netflix-project fade-in">
+                    <div class="project-header netflix-header">
                         <div class="decoration decoration-1"></div>
                         <div class="decoration decoration-2"></div>
                         <div class="project-icon">
@@ -336,14 +404,14 @@
                     <div class="project-body">
                         <h3 class="project-title">Análisis de Netflix</h3>
                         <p class="project-description">Primer ejercicio analizando archivo Netflix. Este proyecto incluye el procesamiento y análisis inicial de datos de catálogo de Netflix.</p>
-                        <a href="https://uriel0wl.github.io/edgarmar-n_awsdata_xideral/Tareas/18Agosto/Netflix.html" target="_blank" class="project-link">
+                        <a href="https://uriel0wl.github.io/edgarmar-n_awsdata_xideral/Tareas/18Agosto/Netflix.html" target="_blank" class="project-link netflix-link">
                             <i class="fas fa-external-link-alt"></i> Ver Proyecto
                         </a>
                     </div>
                 </div>
                 
-                <div class="project-card fade-in">
-                    <div class="project-header">
+                <div class="project-card netflix-charts-project fade-in">
+                    <div class="project-header netflix-charts-header">
                         <div class="decoration decoration-1"></div>
                         <div class="decoration decoration-2"></div>
                         <div class="project-icon">
@@ -354,14 +422,14 @@
                     <div class="project-body">
                         <h3 class="project-title">Visualización de Datos de Netflix</h3>
                         <p class="project-description">Segundo ejercicio añadiendo gráficas al análisis del archivo Netflix. Incluye visualizaciones para mejor comprensión de los datos.</p>
-                        <a href="https://uriel0wl.github.io/edgarmar-n_awsdata_xideral/Tareas/19Agosto/GráficasNetflix.html" target="_blank" class="project-link">
+                        <a href="https://uriel0wl.github.io/edgarmar-n_awsdata_xideral/Tareas/19Agosto/GráficasNetflix.html" target="_blank" class="project-link netflix-charts-link">
                             <i class="fas fa-external-link-alt"></i> Ver Proyecto
                         </a>
                     </div>
                 </div>
                 
-                <div class="project-card fade-in">
-                    <div class="project-header">
+                <div class="project-card spotify-project fade-in">
+                    <div class="project-header spotify-header">
                         <div class="decoration decoration-1"></div>
                         <div class="decoration decoration-2"></div>
                         <div class="project-icon">
@@ -371,8 +439,8 @@
                     </div>
                     <div class="project-body">
                         <h3 class="project-title">Análisis de Datos de Spotify</h3>
-                        <p class="project-description">Análisis de características musicales de Spotify. Explorando patrones de preferencias musicales mediante visualizaciones y análisis estadístico.</p>
-                        <a href="https://uriel0wl.github.io/edgarmar-n_awsdata_xideral/Tareas/21Agosto/Untitled6.html" target="_blank" class="project-link">
+                        <p class="project-description">Análisis interactivo de características musicales de Spotify. Explorando patrones de preferencias musicales mediante visualizaciones y análisis estadístico.</p>
+                        <a href="http://localhost:8888/notebooks/Untitled6.ipynb" target="_blank" class="project-link spotify-link">
                             <i class="fas fa-external-link-alt"></i> Ver Proyecto
                         </a>
                     </div>
