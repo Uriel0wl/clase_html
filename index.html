@@ -18,6 +18,8 @@
             --transition: all 0.3s ease;
             --gradient: linear-gradient(135deg, #e63946 0%, #9d0208 100%);
             --card-bg: #232632;
+            --taxi-yellow: #FFC107;
+            --taxi-yellow-dark: #FFA000;
         }
         
         * {
@@ -205,6 +207,31 @@
         .spotify-dashboard-link:hover {
             background: #1ed760;
             box-shadow: 0 4px 12px rgba(29, 185, 84, 0.4);
+        }
+        
+        /* Taxi themed project */
+        .taxi-project:hover {
+            border-color: var(--taxi-yellow);
+        }
+        
+        .taxi-header {
+            background: linear-gradient(135deg, var(--taxi-yellow) 0%, #FF8F00 100%);
+            color: #333;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .taxi-link {
+            background: var(--taxi-yellow);
+            color: #333;
+        }
+        
+        .taxi-link:hover {
+            background: var(--taxi-yellow-dark);
+            box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+            color: #000;
         }
         
         .project-header {
@@ -483,6 +510,25 @@
                         <p class="project-description">Dashboard interactivo con visualizaciones avanzadas de datos de Spotify. Incluye análisis de tendencias musicales y preferencias de los usuarios.</p>
                         <a href="https://uriel0wl.github.io/edgarmar-n_awsdata_xideral/Tareas/Tarea spotify index.html/Dashboard.html" target="_blank" class="project-link spotify-dashboard-link">
                             <i class="fas fa-external-link-alt"></i> Ver Dashboard
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Nueva tarjeta para el proyecto de taxis -->
+                <div class="project-card taxi-project fade-in">
+                    <div class="project-header taxi-header">
+                        <div class="decoration decoration-1"></div>
+                        <div class="decoration decoration-2"></div>
+                        <div class="project-icon">
+                            <i class="fas fa-taxi"></i>
+                        </div>
+                        <h2>Ejercicio 5</h2>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Análisis de Taxis de NYC</h3>
+                        <p class="project-description">Análisis de datos de taxis de Nueva York con cálculo de promedios de columnas numéricas usando AWS Lambda y almacenamiento de resultados en S3.</p>
+                        <a href="https://uriel0wl.github.io/edgarmar-n_awsdata_xideral/Tareas/25Agosto/TaxisMediaMovido.html" target="_blank" class="project-link taxi-link">
+                            <i class="fas fa-external-link-alt"></i> Ver Proyecto
                         </a>
                     </div>
                 </div>
