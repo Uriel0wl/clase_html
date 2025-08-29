@@ -18,10 +18,28 @@
             --transition: all 0.3s ease;
             --gradient: linear-gradient(135deg, #e63946 0%, #9d0208 100%);
             --card-bg: #232632;
+            
+            /* Netflix colors */
+            --netflix-red: #e50914;
+            --netflix-dark: #141414;
+            
+            /* Spotify colors */
+            --spotify-green: #1db954;
+            --spotify-dark: #191414;
+            
+            /* Taxi colors */
             --taxi-yellow: #FFC107;
             --taxi-yellow-dark: #FFA000;
+            --taxi-dark: #333;
+            
+            /* Titanic colors */
             --titanic-blue: #0e4c72;
             --titanic-blue-dark: #08314d;
+            --titanic-light: #4a8bac;
+            
+            /* Final project colors */
+            --final-purple: #6a40bf;
+            --final-purple-dark: #4c2d99;
         }
         
         * {
@@ -47,7 +65,7 @@
         
         /* Header Styles */
         header {
-            background: var(--gradient);
+            background: linear-gradient(135deg, #e63946 0%, #6a40bf 100%);
             color: white;
             padding: 40px 20px;
             text-align: center;
@@ -112,6 +130,7 @@
             box-shadow: var(--shadow);
             transition: var(--transition);
             border: 1px solid #333642;
+            position: relative;
         }
         
         .project-card:hover {
@@ -121,11 +140,11 @@
         
         /* Netflix themed project */
         .netflix-project:hover {
-            border-color: #e50914;
+            border-color: var(--netflix-red);
         }
         
         .netflix-header {
-            background: linear-gradient(135deg, #e50914 0%, #b20710 100%);
+            background: linear-gradient(135deg, var(--netflix-red) 0%, var(--netflix-dark) 100%);
             color: white;
             padding: 25px;
             text-align: center;
@@ -134,7 +153,7 @@
         }
         
         .netflix-link {
-            background: #e50914;
+            background: var(--netflix-red);
         }
         
         .netflix-link:hover {
@@ -144,11 +163,11 @@
         
         /* Netflix charts themed project */
         .netflix-charts-project:hover {
-            border-color: #e50914;
+            border-color: var(--netflix-red);
         }
         
         .netflix-charts-header {
-            background: linear-gradient(135deg, #e50914 0%, #221f1f 100%);
+            background: linear-gradient(135deg, var(--netflix-red) 0%, #221f1f 100%);
             color: white;
             padding: 25px;
             text-align: center;
@@ -157,7 +176,7 @@
         }
         
         .netflix-charts-link {
-            background: #e50914;
+            background: var(--netflix-red);
         }
         
         .netflix-charts-link:hover {
@@ -167,11 +186,11 @@
         
         /* Spotify themed project */
         .spotify-project:hover {
-            border-color: #1db954;
+            border-color: var(--spotify-green);
         }
         
         .spotify-header {
-            background: linear-gradient(135deg, #1db954 0%, #1ed760 100%);
+            background: linear-gradient(135deg, var(--spotify-green) 0%, #1ed760 100%);
             color: white;
             padding: 25px;
             text-align: center;
@@ -180,7 +199,7 @@
         }
         
         .spotify-link {
-            background: #1db954;
+            background: var(--spotify-green);
         }
         
         .spotify-link:hover {
@@ -190,11 +209,11 @@
         
         /* Spotify Dashboard themed project */
         .spotify-dashboard-project:hover {
-            border-color: #1db954;
+            border-color: var(--spotify-green);
         }
         
         .spotify-dashboard-header {
-            background: linear-gradient(135deg, #1db954 0%, #191414 100%);
+            background: linear-gradient(135deg, var(--spotify-green) 0%, var(--spotify-dark) 100%);
             color: white;
             padding: 25px;
             text-align: center;
@@ -203,7 +222,7 @@
         }
         
         .spotify-dashboard-link {
-            background: #1db954;
+            background: var(--spotify-green);
         }
         
         .spotify-dashboard-link:hover {
@@ -217,7 +236,7 @@
         }
         
         .taxi-header {
-            background: linear-gradient(135deg, var(--taxi-yellow) 0%, #FF8F00 100%);
+            background: linear-gradient(135deg, var(--taxi-yellow) 0%, var(--taxi-dark) 100%);
             color: #333;
             padding: 25px;
             text-align: center;
@@ -259,13 +278,27 @@
             box-shadow: 0 4px 12px rgba(14, 76, 114, 0.4);
         }
         
-        .project-header {
-            background: var(--gradient);
+        /* Final project */
+        .final-project:hover {
+            border-color: var(--final-purple);
+        }
+        
+        .final-header {
+            background: linear-gradient(135deg, var(--final-purple) 0%, var(--final-purple-dark) 100%);
             color: white;
             padding: 25px;
             text-align: center;
             position: relative;
             overflow: hidden;
+        }
+        
+        .final-link {
+            background: var(--final-purple);
+        }
+        
+        .final-link:hover {
+            background: var(--final-purple-dark);
+            box-shadow: 0 4px 12px rgba(106, 64, 191, 0.4);
         }
         
         .project-header::after {
@@ -331,9 +364,8 @@
         }
         
         .project-link:hover {
-            background: var(--accent-color);
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(230, 57, 70, 0.4);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         }
         
         .project-link:hover::before {
@@ -359,7 +391,7 @@
             left: 0;
             width: 100%;
             height: 3px;
-            background: var(--gradient);
+            background: linear-gradient(90deg, var(--netflix-red), var(--spotify-green), var(--taxi-yellow), var(--titanic-blue), var(--final-purple));
         }
         
         .social-links {
@@ -452,6 +484,20 @@
             background: rgba(230, 57, 70, 0.3);
             border-radius: 50%;
         }
+        
+        /* Theme badges */
+        .theme-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            z-index: 3;
+            backdrop-filter: blur(4px);
+        }
     </style>
 </head>
 <body>
@@ -468,6 +514,7 @@
         <main>
             <div class="projects-grid">
                 <div class="project-card netflix-project fade-in">
+                    <div class="theme-badge">Streaming</div>
                     <div class="project-header netflix-header">
                         <div class="decoration decoration-1"></div>
                         <div class="decoration decoration-2"></div>
@@ -486,6 +533,7 @@
                 </div>
                 
                 <div class="project-card netflix-charts-project fade-in">
+                    <div class="theme-badge">Visualización</div>
                     <div class="project-header netflix-charts-header">
                         <div class="decoration decoration-1"></div>
                         <div class="decoration decoration-2"></div>
@@ -504,6 +552,7 @@
                 </div>
                 
                 <div class="project-card spotify-project fade-in">
+                    <div class="theme-badge">Música</div>
                     <div class="project-header spotify-header">
                         <div class="decoration decoration-1"></div>
                         <div class="decoration decoration-2"></div>
@@ -522,6 +571,7 @@
                 </div>
                 
                 <div class="project-card spotify-dashboard-project fade-in">
+                    <div class="theme-badge">Dashboard</div>
                     <div class="project-header spotify-dashboard-header">
                         <div class="decoration decoration-1"></div>
                         <div class="decoration decoration-2"></div>
@@ -541,6 +591,7 @@
                 
                 <!-- Tarjeta para el proyecto de taxis -->
                 <div class="project-card taxi-project fade-in">
+                    <div class="theme-badge">Transporte</div>
                     <div class="project-header taxi-header">
                         <div class="decoration decoration-1"></div>
                         <div class="decoration decoration-2"></div>
@@ -560,6 +611,7 @@
                 
                 <!-- Nueva tarjeta para el proyecto Titanic -->
                 <div class="project-card titanic-project fade-in">
+                    <div class="theme-badge">Historia</div>
                     <div class="project-header titanic-header">
                         <div class="decoration decoration-1"></div>
                         <div class="decoration decoration-2"></div>
@@ -579,6 +631,7 @@
                 
                 <!-- Nueva tarjeta para el proyecto Detalles Titanic -->
                 <div class="project-card titanic-project fade-in">
+                    <div class="theme-badge">Análisis</div>
                     <div class="project-header titanic-header">
                         <div class="decoration decoration-1"></div>
                         <div class="decoration decoration-2"></div>
@@ -589,7 +642,7 @@
                     </div>
                     <div class="project-body">
                         <h3 class="project-title">Detalles del Análisis del Titanic</h3>
-                        <p class="project-description">Análisis detallado de los datos del Titanic with visualizaciones avanzadas y conclusiones sobre los factores que afectaron la supervivencia.</p>
+                        <p class="project-description">Análisis detallado de los datos del Titanic con visualizaciones avanzadas y conclusiones sobre los factores que afectaron la supervivencia.</p>
                         <a href="https://uriel0wl.github.io/edgarmar-n_awsdata_xideral/Tareas/26Agosto/DetallesTitanicX.html" target="_blank" class="project-link titanic-link">
                             <i class="fas fa-external-link-alt"></i> Ver Detalles
                         </a>
@@ -597,8 +650,9 @@
                 </div>
                 
                 <!-- Nueva tarjeta para el Proyecto Final -->
-                <div class="project-card fade-in">
-                    <div class="project-header">
+                <div class="project-card final-project fade-in">
+                    <div class="theme-badge">Integración</div>
+                    <div class="project-header final-header">
                         <div class="decoration decoration-1"></div>
                         <div class="decoration decoration-2"></div>
                         <div class="project-icon">
@@ -609,7 +663,7 @@
                     <div class="project-body">
                         <h3 class="project-title">Proyecto Completo Final</h3>
                         <p class="project-description">Proyecto final que integra todos los conocimientos adquiridos durante la formación en AWS Data Engineer con Xideral.</p>
-                        <a href="https://uriel0wl.github.io/edgarmar-n_awsdata_xideral/Proyecto Final/PROYECTO FINAL/PROYECTO FINAL.html" target="_blank" class="project-link">
+                        <a href="https://uriel0wl.github.io/edgarmar-n_awsdata_xideral/Proyecto%20Final/PROYECTO%20FINAL/PROYECTO%20FINAL.html" target="_blank" class="project-link final-link">
                             <i class="fas fa-external-link-alt"></i> Ver Proyecto Final
                         </a>
                     </div>
