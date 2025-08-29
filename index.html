@@ -22,6 +22,8 @@
             --taxi-yellow-dark: #FFA000;
             --titanic-blue: #0e4c72;
             --titanic-blue-dark: #08314d;
+            --aws-orange: #FF9900;
+            --aws-orange-dark: #EB5F07;
         }
         
         * {
@@ -257,6 +259,29 @@
         .titanic-link:hover {
             background: var(--titanic-blue-dark);
             box-shadow: 0 4px 12px rgba(14, 76, 114, 0.4);
+        }
+        
+        /* AWS themed project */
+        .aws-project:hover {
+            border-color: var(--aws-orange);
+        }
+        
+        .aws-header {
+            background: linear-gradient(135deg, var(--aws-orange) 0%, var(--aws-orange-dark) 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .aws-link {
+            background: var(--aws-orange);
+        }
+        
+        .aws-link:hover {
+            background: var(--aws-orange-dark);
+            box-shadow: 0 4px 12px rgba(255, 153, 0, 0.4);
         }
         
         .project-header {
@@ -610,6 +635,25 @@
                         <h3 class="project-title">Proyecto Completo Final</h3>
                         <p class="project-description">Proyecto final que integra todos los conocimientos adquiridos durante la formación en AWS Data Engineer con Xideral.</p>
                         <a href="https://uriel0wl.github.io/edgarmar-n_awsdata_xideral/Proyecto Final/ProyectoCompletoFinal.html" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Ver Proyecto Final
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Nueva tarjeta para el Proyecto Final AWS Data Xideral -->
+                <div class="project-card aws-project fade-in">
+                    <div class="project-header aws-header">
+                        <div class="decoration decoration-1"></div>
+                        <div class="decoration decoration-2"></div>
+                        <div class="project-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <h2>Proyecto Final</h2>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">AWS Data Engineer - Xideral</h3>
+                        <p class="project-description">Proyecto final completo del curso de AWS Data Engineer con Xideral. Incluye análisis de datos, visualizaciones y procesamiento en la nube de AWS.</p>
+                        <a href="https://uriel0wl.github.io/edgarmar-n_awsdata_xideral/Proyecto Final/PROYECTO FINAL/PROYECTO FINAL.html" target="_blank" class="project-link aws-link">
                             <i class="fas fa-external-link-alt"></i> Ver Proyecto Final
                         </a>
                     </div>
